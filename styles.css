@@ -267,7 +267,7 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #FFB3C6;
+    background-color: #FFE4EC;
     padding: 1rem;
     border-radius: 1.5rem;
     width: 90%;
@@ -302,5 +302,107 @@ main {
 .food-item em {
     display: block;
     padding-top: 2rem;
+}
+
+#order-section {
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+#order-form {
+    padding-top: 3rem;
+    font-size: 4rem;
+}
+
+form {
+    display: flex;
+    flex-direction:column;
+    gap: 2rem;
+    padding: 2rem;
+    width: 90%;
+    max-width: 55rem;
+    margin: 3rem auto 0;
+    border-radius: 1.5rem;
+    background-color: #ffd6e3;
+}
+
+#name-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    max-width: 60rem;
+}
+
+#name-input input {
+    flex: 1;
+    font-size: 1.5rem;
+    font-family: "Jua", sans-serif;
+    outline: none;
+    text-align: center;
+    background-color: #FFE5EC;
+    color: #7f132e;
+    border: .5rem solid #FFE5EC;
+    border-radius: 25px;
+    min-width: 20rem;
+    padding: .5rem 1rem;
+}
+
+#name-input input::placeholder {
+    color: #FB6F92;
+    font-display: center;
+    opacity: 0.5;
+    text-align: center;
+}
+
+#name-input input:focus {
+    background-color: #FFF0F5;
+    border: 0.5rem solid #FB6F92;
+}
+
+#name-input h3 ,
+#dishes-input h3 
+{
+    font-size: 3rem;
+}
+
+#dishes-input p {
+    font-size: 2rem;
+}
+
+#dishes-input label {
+    font-size: 2rem;
+}
+
+.food-inputs-row {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    font-size: 1rem;
+}
+
+#dishes-input input[type="number"] {
+    width: 7rem;
+    border: .2rem solid #FFE5EC;
+    border-radius: 2rem;
+    background-color: #FFE5EC;
+    font-size: 1rem;
+    text-align: center;
+    color: #7f132e;
+    font-family: "Jua", sans-serif;
+    outline: none;
+    padding: 0.5rem 0.5rem;
+}
+
+#dishes-input input[type="number"]:focus {
+    border: 0.3rem solid #FB6F92;
+    background-color: #FFF0F5;
 }
 
