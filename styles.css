@@ -83,8 +83,10 @@ h1 {
     left: 49%;
     transform: translateX(-50%);
     font-size: 2rem;
+    font-weight: 300;
     color: #FB6F92;
     text-align: center;
+    z-index: 1;
 }
 .cloud {
     position: absolute;
@@ -161,3 +163,144 @@ h1 {
     top: 5%;
     right: 70%;
 }
+
+main {
+    position: relative;
+}
+
+.main-cloud {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#main_cloud1 {
+    top: 25%;
+    left: 10%;
+}
+
+#main_cloud2 {
+    top: 35%;
+    left: 80%;
+}
+
+#main_cloud3 {
+    top: 45%;
+    left: 1%;
+}
+
+#main-cloud4 {
+    top: 55%;
+    left: 82%;
+}
+
+#main_cloud5 {
+    top: 65%;
+    left: 2%;
+}
+
+#main_cloud6 {
+    top:75%;
+    left: 75%;
+}
+
+#main_cloud7 {
+    top: 85%;
+    left: 5%;
+}
+
+#guide {
+    position: absolute;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10rem;
+    z-index: 4;
+}
+
+#how-it-works {
+    width: 90%;
+    height: auto;
+}
+
+.steps {
+    display: flex;
+    font-size: 2rem;
+    flex-direction: row;
+    gap: 18rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+.food-section {
+    padding-top: 10rem;
+}
+
+#menu {
+    position: relative;
+    padding-top: 7em;
+    padding-bottom: 2rem;
+    text-align: center;
+    z-index: 2;
+    font-size: 5rem;
+}
+
+.food-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;         /* Adjusted gap for better spacing -- */
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.food-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFB3C6;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    width: 90%;
+    max-width: 20rem;
+    height: auto;
+    transition: transform 0.3s  , background-color 0.3s , border 0.3s;
+}
+
+.food-item:hover {
+    background-color: #FFD9DF;
+    border: .5rem solid #FE84A2;
+}
+
+.food {
+    width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.food-item h3 {
+    font-size: 2rem;
+    color: #FB6F92;
+    margin: 0.5rem 0 0.2rem 0;
+}
+
+.food-item p {
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    color: #FB6F92;
+}
+
+.food-item em {
+    display: block;
+    padding-top: 2rem;
+}
+
