@@ -366,16 +366,19 @@ form {
 }
 
 #name-input h3 ,
-#dishes-input h3 
+#dishes-input h3 , #drinks-input h3 ,
+#love-level-input  h3 , #special-requests-input h3 
 {
     font-size: 3rem;
 }
 
-#dishes-input p {
+#dishes-input p ,  #drinks-input p ,
+#love-level-input p
+{
     font-size: 2rem;
 }
 
-#dishes-input label {
+#dishes-input label , #drinks-input label {
     font-size: 2rem;
 }
 
@@ -406,3 +409,128 @@ form {
     background-color: #FFF0F5;
 }
 
+.drinks-input-row {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.drinks-input-row label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 0.2rem solid #FFE5EC;
+    background-color: #FFE5EC;
+}
+
+input[type="radio"]:focus {
+    border: 0.2rem solid #FB6F92;
+    background-color:#FB6F92 ;
+}
+
+#love-level-labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    margin-top: .5rem;
+}
+
+.heart-slider {
+    -webkit-appearance: none;
+    width: 85%;
+    height: 2rem;
+    background: linear-gradient(
+    to right,
+  #ff9ab5,
+  #fff1f5,
+  #a4133c
+    );
+    border-radius: 1rem;
+    outline: none;
+    margin: 1rem 0;
+}
+
+.heart-slider::-webkit-slider-runnable-track {
+    height: 1rem;
+    border-radius: 1rem;
+}
+
+.heart-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 3rem;
+    height: 3rem;
+    background: url(heart.png) no-repeat center;
+    background-size: contain;
+    margin-top: -1rem;
+    cursor: pointer;
+    border: none;
+}
+
+#special-requests-input textarea {
+    width: 90%;
+    min-height: 5rem;
+    border: .5rem solid #FFE5EC;
+    border-radius: 2rem;
+    background-color: #FFE5EC;
+    padding: 1rem;
+    color: #7f132e;
+    font-size: 1.2rem;
+    font-family: "Jua", sans-serif;
+    outline: none;
+}
+
+#special-requests-input textarea::placeholder {
+    font-display: left;
+    opacity: 0.5;
+    color: #FB6F92;
+    text-align: left;
+}
+
+#special-requests-input textarea:focus {
+    background-color: #FFF0F5;
+    border: 0.5rem solid #FB6F92;
+}
+
+#text-area-padding {
+    padding-top: 2rem;
+}
+
+#checkout-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+form input[type="button"] {
+    font-size: 1.2rem;
+    width: 15rem;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-family: "Jua", sans-serif;
+    cursor: pointer;
+    background-color: #FB6F92;
+    color: #FFE5EC;
+    border: .2rem solid #FB6F92;
+    transition: all 0.3s ease;
+}
+
+form input[type="button"]:hover {
+    transform: scale(1.1);
+}
+
+.input-padding {
+    padding: 1.5rem;
+}
