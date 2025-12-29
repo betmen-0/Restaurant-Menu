@@ -4,11 +4,11 @@ const guideBtn = document.getElementById("guidebutton");
 const startX =0;
 const startY =0;
 
-let endX = window.innerWidth * 0.5;
+let endX = window.innerWidth * 0.70;
 let endY = window.innerHeight * 1.2;
 
 function setEndCoordinates() {
-    endX = window.innerWidth * 0.5;
+    endX = window.innerWidth * 0.7;
     endY = window.innerHeight * 1.2;
 }
 window.addEventListener("resize", setEndCoordinates);
@@ -25,4 +25,7 @@ window.addEventListener("scroll",() => {
     updateArrow(scrollProgress);
 });
 
-guideBtn.addEventListener("click")
+guideBtn.addEventListener("click", () => {
+    updateArrow(1);
+    arrow.style.display = "block";
+});
